@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div id="entrada">
+        <form class="inputs" id="formulario">
+
+            <label for="item">*Item:</label>
+            <input type="text" name="item" id="item" required><br>
+
+            <label for="preco">*Preço</label>
+            <input type="number" name="preco" id="preco" required><br>
+
+            <label for="quantidade">*Qtde</label>
+            <input type="number" name="quantidade" id="quantidade" required>
+
+            <input type="submit" value="Enviar" id="btnEnviar" class="bnt">
+        </form>
+    </div>
+
+
+    <div id="saida">
+        <div class="saidas" id="listaItens">
+        </div>
+
+        <h1 id="valortotal">Valor total: <strong id="valorTotal"></strong></h1>
+    </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
