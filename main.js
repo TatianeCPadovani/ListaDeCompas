@@ -66,7 +66,7 @@ function criaItemLista(item) {
 
     listaItens.appendChild(criaItem);
     definirvalorTotal(item);
-
+    
 }
 
 function checkRiscado(item, idsItem) {
@@ -102,7 +102,7 @@ function riscarItem(item, parent, id) {
 function botaoApagar(idItem) {
 
     var criaBotaoApagar = document.createElement('button');
-    criaBotaoApagar.innerHTML = 'X';
+    criaBotaoApagar.innerHTML = '🗑';
     criaBotaoApagar.classList.add('botaoDinamico');
 
     criaBotaoApagar.addEventListener('click', function () {
@@ -131,7 +131,7 @@ function atualizarLista(novaLista) {
 function preparaEdicao(itemEditado, idsItem) {
 
     var criaBotaoEditar = document.createElement('button');
-    criaBotaoEditar.innerHTML = 'editar';
+    criaBotaoEditar.innerHTML = '🖉';
     criaBotaoEditar.classList.add('botaoDinamico');
 
     criaBotaoEditar.addEventListener('click', function () {
